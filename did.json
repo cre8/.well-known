@@ -3,12 +3,12 @@
     "https://www.w3.org/ns/did/v1",
     "https://w3id.org/security/suites/jws-2020/v1"
   ],
-  "id": "did:web:example.com",
+  "id": "did:web:cre8.github.io",
   "verificationMethod": [
     {
-      "id": "did:web:example.com#key-0",
+      "id": "did:web:cre8.github.io#key-0",
       "type": "JsonWebKey2020",
-      "controller": "did:web:example.com",
+      "controller": "did:web:cre8.github.io",
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "Ed25519",
@@ -16,9 +16,9 @@
       }
     },
     {
-      "id": "did:web:example.com#key-1",
+      "id": "did:web:cre8.github.io#key-1",
       "type": "JsonWebKey2020",
-      "controller": "did:web:example.com",
+      "controller": "did:web:cre8.github.io",
       "publicKeyJwk": {
         "kty": "OKP",
         "crv": "X25519",
@@ -26,9 +26,9 @@
       }
     },
     {
-      "id": "did:web:example.com#key-2",
+      "id": "did:web:cre8.github.io#key-2",
       "type": "JsonWebKey2020",
-      "controller": "did:web:example.com",
+      "controller": "did:web:cre8.github.io",
       "publicKeyJwk": {
         "kty": "EC",
         "crv": "P-256",
@@ -38,15 +38,15 @@
     },
   ],
   "authentication": [
-    "did:web:example.com#key-0",
-    "did:web:example.com#key-2"
+    "did:web:cre8.github.io#key-0",
+    "did:web:cre8.github.io#key-2"
   ],
   "assertionMethod": [
-    "did:web:example.com#key-0",
-    "did:web:example.com#key-2"
+    "did:web:cre8.github.io#key-0",
+    "did:web:cre8.github.io#key-2"
   ],
   "keyAgreement": [
-    "did:web:example.com#key-1", 
-    "did:web:example.com#key-2"
+    "did:web:cre8.github.io#key-1", 
+    "did:web:cre8.github.io#key-2"
   ]
 }
