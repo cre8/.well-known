@@ -7,10 +7,10 @@ A CICD workflow will publish the `did.json` file:
 
 ```
 did id -> resolved url to github age-> file in github repository 
-did:web:cre8.github.com -> cre8.github.com/.well-known/did.json -> https://github.com/cre8/.well-known/blob/main/did.json
-did:web:cre8.github.com:example -> cre8.github.com/example/did.json -> https://github.com/cre8/example/blob/main/did.json
-did:web:cre8.github.com:example:.well-known -> cre8.github.com/example/.well-known/did.json -> https://github.com/cre8/example/blob/main/.well-known/did.json
-did:web:cre8.github.com:example:product:1234 -> cre8.github.com/example/product/1234/did.json -> https://github.com/cre8/example/blob/main/product/1234/did.json
+did:web:cre8.github.io -> cre8.github.io/.well-known/did.json -> https://github.io/cre8/.well-known/blob/main/did.json
+did:web:cre8.github.io:example -> cre8.github.io/example/did.json -> https://github.io/cre8/example/blob/main/did.json
+did:web:cre8.github.io:example:.well-known -> cre8.github.io/example/.well-known/did.json -> https://github.io/cre8/example/blob/main/.well-known/did.json
+did:web:cre8.github.io:example:product:1234 -> cre8.github.io/example/product/1234/did.json -> https://github.io/cre8/example/blob/main/product/1234/did.json
 ```
 
 ## Update
