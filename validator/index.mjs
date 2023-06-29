@@ -8,7 +8,7 @@ const githubRepository = process.env.GITHUB_REPOSITORY ?? 'cre7/.well-known';
 const githubUser = githubRepository.split('/')[0];
 const repository = githubRepository.split('/')[1] === '.well-known' ? '' : `:${githubRepository.split('/')[1]}`;
 const preDidId = `did:web:${githubUser}.github.io${repository}`;
-const foundError = false;
+let foundError = false;
 
 
 /**
