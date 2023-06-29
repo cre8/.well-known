@@ -1,5 +1,5 @@
 {
-  "id": "did:web:cre8.github.io",
+  "id": "did:web:cre8.github.com",
   "verificationMethod": [
     {
       "id": "did:web:cre8.github.io#key-0",
