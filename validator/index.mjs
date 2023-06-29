@@ -8,6 +8,7 @@ const githubRepository = process.env.GITHUB_REPOSITORY ?? 'cre7/.well-known';
 const githubUser = githubRepository.split('/')[0];
 const repository = githubRepository.split('/')[1] === '.well-known' ? '' : `:${githubRepository.split('/')[1]}`;
 const preDidId = `did:web:${githubUser}.github.io${repository}`;
+const foundError = false;
 
 
 /**
@@ -54,7 +55,8 @@ function validateIdMatch(filePath) {
       throw new Error(`Id mismatch: ${shouldId} !== ${content.id}`);
     }
   } catch (err) {
-    console.log(err);
+    console.log(err.message);
+    foundError = true;
   };
 }
 
@@ -63,8 +65,12 @@ findFilesWithMatchingName(directoryPath, fileName)
     for(const filePath of filePaths) {
       validateIdMatch(filePath);
     }
+    if(foundError) {
+      process.exit(1);
+    }
   })
   .catch((err) => {
     console.error('Error:', err);
+    process.exit(1);
   });
 
