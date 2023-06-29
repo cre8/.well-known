@@ -27,7 +27,7 @@ To use this for your own did:web, you need to do the following steps:
 
 # Known issues
 ## resolvers return 404
-In case your dd docuent is not well formatted, the resolver will fail to valide date did document and will return a 404.
+In case your did docuent is not well formatted, some resolvers like the universal resolver will fail to validate the did document and will return a 404.
 Example
 ```
 {
@@ -83,11 +83,4 @@ Example
 When we are looking at the end ob the object `verificationMethod`, we have a comma after the last inserted key. Some JSON parser will parse it anyway, but not all validators. 
 This CICD is not validating the input yet, so you have to be careful using it.
 
-## The website you are visiting is suspected of phishing!
-When you name your repository `.well-known` to get a shorter id for the did, Google Chrome will return a phishing warning when visiting the root path: `https://cre8.github.io/.well-known/`. This has NO effect on requesting the did document by requesting `https://cre8.github.io/.well-known/did.json`. When you want to avoid the error, use antother name for your repository like:
-```
-did:web:cre8.github.io:example -> cre8.github.io/example/did.json -> https://github.com/cre8/example/blob/main/did.json
-```
-
-## Missmatch
-The CICD will not check if the requested did doc matches with the one mentioned in the did document. So you have to check that your did:web that gets reslved to the `did.json` in your reposirotry matched with the used id inside the  `did.json` file.
+The CICD will validate all `did.json` files an checks if the id of the document on the root level match. It will NOT check if your did document is valid (e.g. it will not check if the id matches with the ones in the verification method's keys.
