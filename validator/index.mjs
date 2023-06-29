@@ -4,7 +4,7 @@ import path from 'path';
 // Usage example
 const directoryPath = '..' + path.sep;
 const fileName = 'did.json';
-const githubRepository = process.env.GITHUB_REPOSITORY ?? 'cre7/.well-known';
+const githubRepository = process.env.GITHUB_REPOSITORY ?? 'cre8/.well-known';
 const githubUser = githubRepository.split('/')[0];
 const repository = githubRepository.split('/')[1] === '.well-known' ? '' : `:${githubRepository.split('/')[1]}`;
 const preDidId = `did:web:${githubUser}.github.io${repository}`;
