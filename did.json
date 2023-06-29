@@ -42,7 +42,7 @@
     "did:web:cre8.github.io#key-2"
   ],
   "keyAgreement": [
-    "did:web:cre8.github.io#key-1", 
+    "did:web:cre8.github.io#key-1",
     "did:web:cre8.github.io#key-2"
   ]
 }

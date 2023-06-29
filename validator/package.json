@@ -1,0 +1,19 @@
+{
+  "name": "validator",
+  "description": "A simple repository that publish a did document on github via the [did:web method](https://w3c-ccg.github.io/did-method-web/)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cre8/.well-known.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cre8/.well-known/issues"
+  },
+  "homepage": "https://github.com/cre8/.well-known#readme"
+}
