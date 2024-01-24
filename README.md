@@ -16,7 +16,7 @@ did:web:cre8.github.io:example:product:1234 -> cre8.github.io/example/product/12
 ## Update
 In case you want to update your did document, you need to update the did.json file. This will replace the did file and cloud break older signed credentials since the verifier is not able to reqeust the older did.json file with the old key.
 
-# Close repository
+# Clone repository
 
 To use this for your own did:web, you need to do the following steps:
 - click on "use this as template" to generate your own repository based on this repo
